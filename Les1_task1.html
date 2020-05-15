@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        /*
+        1. Задать температуру в градусах по Цельсию. Вывести в alert соответствующую температуру
+        в градусах по Фаренгейту. Подсказка: расчёт идёт по формуле:
+        Tf = (9 / 5) * Tc + 32, где Tf – температура по Фаренгейту, Tc – температура по Цельсию
+        */
+       let tempC = +prompt('Введите температуру в градусах Цельсия: ', 24);
+       let tempF =  (9 / 5) * tempC + 32;
+       alert(`Температура ${tempC}C = ${tempF}F`);
+
+    </script>
+</body>
+
+</html>

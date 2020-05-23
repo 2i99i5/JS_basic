@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        /*
+        4. Перед вами находится массив с продуктами,
+        сегодня распродажа и вам нужно на каждый товар применить скидку 15%,
+        можете использовать метод forEach
+        */
+        const discount = 0.15;
+        const products = [
+            {
+                id: 3,
+                price: 200,
+            },
+            {
+                id: 4,
+                price: 900,
+            },
+            {
+                id: 1,
+                price: 1000,
+            }
+        ];
+        products.forEach(item => {
+            item.price *= (1 - discount);
+        });
+        
+        console.log(products);
+
+    </script>
+</body>
+</html>

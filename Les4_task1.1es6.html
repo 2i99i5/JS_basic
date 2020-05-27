@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        /*
+        1.1 Сделайте в стиле es5, а затем в стиле es6 (по аналогии из урока), конструктор Product,
+        который принимает параметры name и price, сохраните их как свойства объекта.
+        Также объекты типа Product должны иметь метод make25PercentDiscount,
+        который будет уменьшать цену в объекте на 25%.
+        */
+        class Product {
+            constructor(name, price) {
+                this.name = name;
+                this.price = price;
+            }
+
+            make25PercentDiscount() {
+                this.price *= (100 - 25)/100;
+            }
+        }
+        
+        const product1 = new Product('Item1', 500);
+        product1.make25PercentDiscount();
+        console.log(product1);
+    </script>
+</body>
+</html>

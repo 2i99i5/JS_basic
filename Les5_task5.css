@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.white {
+    background: #fece9e;
+}
+
+.black {
+    background: #d18b46;
+}
+
+tr:last-child td:first-child {
+    border-left: none;
+    border-bottom: none;
+}
+tr:first-child td:first-child {
+    border-left: none;
+    border-top: none;
+}
+
+i {
+    font-size: 24px;
+    text-shadow: 0 0 3px grey;
+}

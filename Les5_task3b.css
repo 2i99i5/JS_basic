@@ -1,0 +1,44 @@
+.wrap {
+    width: 500px;
+    padding: 10px;
+    background: rgb(245, 245, 245);
+    position: fixed;
+    top: 15%;
+    left: calc(50% - 250px);
+    box-shadow: 0 0 10px black;
+}
+
+.hidden {
+    display: none;
+}
+
+.close {
+    position: absolute;
+    right: 0px;
+    top: -10x;
+    width: 30px;
+    height: 30px;
+    opacity: 0.3;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,7 @@
+#lightgallery > a {
+    text-decoration: none;
+}
+
+.thumbnail {
+    width: 200px;
+}

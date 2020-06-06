@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Documenrt</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="btn-group ml-auto">
+                <button class="btn btn-light btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Cart
+                </button>
+                <div class="dropdown-menu dropdown-menu-right basketPanel">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col"></th>
+                                <th scope="col">Qty</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="2" scope="row">Total:</th>
+                                <td colspan="3">
+                                    <span class="total">0</span>
+                                    <i class="fa fa-usd"></i>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-4">
+                <div>Item1</div>
+                <img src="https://placeimg.com/640/480/nature" alt="..." class="img-thumbnail">
+                <div>
+                    <span class="productPrice">5</span>
+                    <i class="fa fa-usd"></i>
+                </div>
+                <button type="button" 
+                        class="btn btn-success mt-3 toBasketBtn"
+                        data-id="1"
+                        data-price="5"
+                        data-name="Item1"
+                        >
+                    In cart
+                </button>
+            </div>
+            <div class="col-4">
+                <div>Item2</div>
+                <img src="https://placeimg.com/640/480/arch" alt="..." class="img-thumbnail">
+                <div>
+                    <span class="productPrice">10</span>
+                    <i class="fa fa-usd"></i>
+                </div>
+                <button type="button" 
+                        class="btn btn-success mt-3 toBasketBtn"
+                        data-id="2"
+                        data-price="10"
+                        data-name="Item2"
+                        >
+                    In cart
+                </button>
+            </div>
+            <div class="col-4">
+                <div>Item3</div>
+                <img src="https://placeimg.com/640/480/tech" alt="..." class="img-thumbnail">
+                <div>
+                    <span class="productPrice">15</span>
+                    <i class="fa fa-usd"></i>
+                </div>
+                <button type="button" 
+                        class="btn btn-success mt-3 toBasketBtn"
+                        data-id="3"
+                        data-price="15"
+                        data-name="Item3"
+                        >
+                    In cart
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
